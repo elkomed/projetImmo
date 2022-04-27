@@ -1,0 +1,803 @@
+   /* 
+ *{
+   background-image: url(./image_immo/Villaa4.jpg);
+ } */
+   .back {
+     background-color: rgb(82, 90, 75);
+     
+     font-size: clamp(14px, 2vw, 20px);
+   
+   }
+
+   #titre1 {
+     text-align: center;
+     margin-top: 4.2%;
+     margin-bottom: 0px;
+     font-family: "Poppins", sans-serif;
+     font-size: 50px;
+     color: #7470e7;
+     z-index: 0;
+     position: relative;
+     padding-top: 3%;
+     text-transform: uppercase;
+   }
+
+   .img1 {
+     display: flex;
+     justify-content: space-around;
+
+   }
+
+   .logo img {
+     padding-top: 0px;
+     height: 70px;
+     width: 80px;
+   }
+
+   body,
+   html {
+     height: 100%;
+   }
+
+   /* animation des image ARRAS ET LILLE */
+
+   @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+   .aralil {
+     font-family: 'Source Sans Pro', sans-serif;
+     position: relative;
+     overflow: hidden;
+     margin: 10px;
+     width: 100%;
+     color: #000000;
+     text-align: center;
+     font-size: 16px;
+     background-color: rgb(58 76 120)
+   }
+
+   .aralil * {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     -webkit-transition: all 0.45s ease;
+     transition: all 0.45s ease;
+   }
+
+   .aralil img {
+     vertical-align: top;
+     max-width: 100%;
+     backface-visibility: hidden;
+     width: 100%;
+     padding: 10;
+     border-radius: 8%
+   }
+
+   .aralil article {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 1;
+     align-items: center;
+     bottom: 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+
+   .aralil h3,
+   .aralil P {
+     margin: 0;
+     opacity: 0;
+     color: #000;
+     letter-spacing: 2px;
+   }
+
+   .aralil {
+     display: flex;
+   }
+
+   .aralil h3 {
+     -webkit-transform: translateY(-100%);
+     transform: translateY(-100%);
+     text-transform: uppercase;
+     font-weight: 400;
+   }
+
+   .aralil P {
+     font-weight: normal;
+     font-style: italic;
+     -webkit-transform: translateY(100%);
+     transform: translateY(100%);
+   }
+
+   .aralil:hover>img,
+   .aralil.hover>img {
+     opacity: 0.1;
+   }
+
+   .aralil:hover h3,
+   .aralil.hover h3,
+   .aralil:hover P,
+   .aralil.hover P {
+     transform: translateY(0);
+     transform: translateY(0);
+     opacity: 10;
+   }
+
+
+   /* animation image de touquet  */
+
+
+   .touquet1 {
+     font-family: 'Lato', Arial, sans-serif;
+     position: relative;
+     overflow: hidden;
+     margin: 10px;
+     display: flex;
+     width: 100%;
+     color: #fff;
+     text-align: center;
+     font-size: 16px;
+     background-color: #c07171;
+     line-height: 1.5em;
+   }
+
+   .touquet1 {
+
+     -webkit-transition: all 0.25s linear;
+     transition: all 0.25s linear;
+   }
+
+   .touquet1 img {
+     width: calc(100%);
+     backface-visibility: hidden;
+     vertical-align: top;
+   }
+
+   .touquet1 article {
+     position: absolute;
+     top: 50%;
+     width: 100%;
+     padding: 5px 40px;
+     opacity: 0;
+   }
+
+   .touquet1 p {
+     font-weight: 400;
+     margin: 0;
+     font-size: 0.9em;
+   }
+   .touquet1 i {
+     position: absolute;
+     color: rgb(194, 0, 0);
+     font-size: 34.375px;
+     line-height: 55px;
+     width: 55px;
+     bottom: 0;
+     right: 0;
+     -webkit-transform: translateX(55px);
+     transform: translateX(55px);
+   }
+
+   .touquet1 a {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+   }
+
+   .touquet1:hover img,
+   .touquet1.hover img {
+     opacity: 0.3;
+
+   }
+
+   .touquet1:hover article,
+   .touquet1.hover article {
+     -webkit-transform: translateY(-50%);
+     transform: translateY(-50%);
+          opacity: 1;
+   }
+
+
+   /* css anas */
+
+
+
+
+
+
+   @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+   * {
+     margin: 0;
+     padding: 0%;
+     box-sizing: border-box;
+     font-family: "Popins", sans-serif;
+   }
+
+   /* =====================
+  ======================= 
+  HEADER
+  =======================
+  =======================*/
+   header {
+     position: fixed;
+     top: 0px;
+     left: 0%;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     transition: 0.9s ease-in-out;
+     background-color: transparent;
+     padding: 40px 100px;
+     z-index: 4;
+   }
+
+   /*================
+  ====================
+  LOGO DU HEADER
+  ====================
+  ==================*/
+   header #logo {
+     transition: 0.6s;
+     font-weight: 700;
+     color: #ffffff;
+     text-decoration: none;
+     font-size: 2em;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+   }
+
+   /*================
+  ====================
+  ELEMENTS DU HEADER
+  ==================
+  ===================*/
+   header ul {
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   header ul li {
+     position: relative;
+     list-style: none;
+   }
+
+   header ul li a {
+     position: relative;
+     margin: 0 15px;
+     text-decoration: none;
+     color: #ffffff;
+     letter-spacing: 2px;
+     font-weight: 500px;
+   }
+
+   /*===================
+  ====================
+  BARRE DU HEADER(NAV) APRES JS
+  =================
+  ===================*/
+   /* NAV COULEUR */
+   header.active {
+     background: #ffffff;
+     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+   }
+
+   /* LOGO COULEUR */
+   header #logo.active {
+     color: #391650;
+   }
+
+   /* COULEUR VILLE */
+   header ul li a.active {
+     color: #391650;
+   }
+
+   /* ==================
+  =====================
+  BANNIERE DU SITE(IMAGE PRINCIPAL)
+  ====================
+  =================== */
+   .banner {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     background: url(./image_immo/accueil.jpg);
+     background-size: cover;
+     font-size: 3em;
+   }
+
+   /* ===============
+  ==================
+  IMAGE DES AGENTS
+  ==================
+  ================== */
+   .imgprofil {
+     width: 45%;
+     cursor: pointer;
+   }
+
+   /* ==============
+  =================
+  HEADLINE TILTLE
+  =================
+  ================*/
+   .profil h1 {
+     display: flex;
+     justify-content: center;
+     margin-top: 5%;
+     color: #391650;
+     font-weight: 30;
+     font-size: 2em;
+   }
+
+   /* =============
+  =================
+  NOS 3 AGENTS
+  =============
+  ================ */
+   .profil h2 {
+     display: flex;
+     justify-content: center;
+     margin-top: 5%;
+     margin-bottom: 3%;
+     color: #391650;
+     font-weight: 30;
+     font-size: 2em;
+   }
+
+   /* =================
+  ===================
+  DIV DES AGENTS
+  ================
+  ================ */
+   .agents {
+     display: flex;
+     text-align: center;
+   }
+
+   /* ============
+  =================
+  BOUTON SOUS L IMAGE
+  =================
+  =============== */
+   .bouton {
+     background: none;
+     color: inherit;
+     border: none;
+     padding: 0;
+     font: inherit;
+     outline: inherit;
+   }
+
+   .bouton :hover {
+     opacity: 0.6;
+     transition: all 0.5s;
+   }
+
+   /* ============
+  =================
+  DIV QUI APPARAIT LORS DU CLIQUE 
+  ==========
+  ===============*/
+   #div1,
+   #div2,
+   #div3 {
+     display: none;
+     border: solid 1.5px;
+     border-radius: 10px;
+     background-color: #f3ebebf3;
+     position: fixed;
+     top: 23%;
+     left: 26%;
+     width: 50%;
+     height: 50%;
+     z-index: 100;
+   }
+
+   #div1 h3,
+   #div2 h3,
+   #div3 h3 {
+     font-family: "Montserrat", sans-serif;
+     font-size: 2em;
+     color: #391650;
+     text-shadow: 2px 2px 8px #391650;
+   }
+
+   #div2 a,
+   #div1 a,
+   #div3 a {
+     text-decoration: none;
+     color: #391650;
+     font-family: "Montserrat", sans-serif;
+     font-weight: bolder;
+   }
+
+   #div1 p,
+   #div2 p,
+   #div3 p {
+     font-family: "Montserrat", sans-serif;
+     font-size: 1.75em;
+     color: #391650;
+     padding-top: 7%;
+   }
+
+   .agents {
+     display: flex;
+     justify-content: center;
+   }
+
+   .agents h3 {
+     font-family: "Montserrat"sans-serif;
+   }
+
+   .close {
+     position: absolute;
+     position: absolute;
+     float: right;
+     right: 2%;
+     top: 2%;
+     color: #391650;
+     cursor: pointer;
+   }
+
+   /*===============
+  =================
+  CAROUSSEL MANUEL
+  ===================
+  =================*/
+   .main-content {
+     padding: 3vw 5vw 5vw;
+   }
+
+   .main-content h1 {
+     font-family: "Montserrat", sans-serif;
+     font-size: clamp(25px, 7vw, 70px);
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+   }
+
+   .main-content h1+span {
+     font-size: clamp(14px, 2vw, 20px);
+   }
+
+   .slideshow-container {
+     margin-top: 4vw;
+     overflow: hidden;
+     min-height: 60vmin;
+     cursor: grab;
+     position: relative;
+   }
+
+   .slideshow-container:active {
+     cursor: grabbing;
+   }
+
+   .slideshow {
+     position: absolute;
+     height: 100%;
+     display: flex;
+     pointer-events: none;
+   }
+
+   .slide {
+     flex-shrink: 0;
+     height: 100%;
+     width: 80vmin;
+     color: #fff;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+   }
+
+   .slide:not(:nth-child(1)) {
+     margin-left: 10px;
+   }
+
+   .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: rgba(0, 0, 0, 0.15);
+   }
+
+   .slide h2,
+   .slide a {
+     text-shadow: 0 0 5px rgba(0, 0, 0, 0.39);
+   }
+
+   .slide h2 {
+     position: absolute;
+     top: clamp(10px, 2vw, 20px);
+     left: clamp(10px, 2vw, 20px);
+     font-size: clamp(20px, 3vw, 40px);
+     font-weight: 300;
+   }
+
+   .slide a {
+     position: absolute;
+     bottom: clamp(10px, 2vw, 20px);
+     right: clamp(10px, 2vw, 20px);
+     font-size: clamp(16px, 3vw, 20px);
+     font-weight: 300;
+     color: #fff;
+     pointer-events: auto;
+   }
+
+   .s1 {
+     background-image: url("https://images.unsplash.com/photo-1577495508326-19a1b3cf65b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80");
+   }
+
+   .s2 {
+     background-image: url("https://images.unsplash.com/photo-1609766857326-18a204c2cf31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+   }
+
+   .s3 {
+     background-image: url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1054&q=80");
+   }
+
+   .s4 {
+     background-image: url("https://images.unsplash.com/photo-1566908829550-e6551b00979b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80");
+   }
+
+   .s5 {
+     background-image: url("https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80");
+   }
+
+   /* ===========
+  ===============
+  STYLE GENERAL DU FOOTER 
+  (COULEUR,PLACEMENT POSITIONNEMENT
+  ===============
+  ===============
+  */
+   footer {
+     bottom: 0;
+
+   }
+
+   .footer-distributed {
+     background-color: #391650;
+
+     box-sizing: border-box;
+     width: 100%;
+     text-align: left;
+     font: bold 16px sans-serif;
+     padding: 55px 50px;
+     margin-top: 80px;
+   }
+
+   /* 
+  ===============
+  ===============
+  DISPOSITION DES DIFFERENTES DIV DANS LE FOOTER
+  ======================
+  ================== */
+   .footer-distributed .footer-left,
+   .footer-distributed .footer-center,
+   .footer-distributed .footer-right {
+     display: inline-block;
+     vertical-align: top;
+   }
+
+   /* 
+  ==================
+  ==================
+  LARGEUR DE FOOTER LEFT PRISE DANS LE FOOTER
+  ================
+  =============== */
+   .footer-distributed .footer-left {
+     width: 40%;
+   }
+
+   /* 
+  ==============
+  ==================
+  STYLE DU IMMO LUXE DANS LE FOOTER
+  ==================
+  ================== */
+   .footer-distributed h3 {
+     color: #ffffff;
+     font: normal 36px "Poppins", sans-serif;
+     margin: 0;
+   }
+
+   /* 
+  ================
+  ================
+  STYLE DES LIENS SOUS LE IMMO LUXE 
+  ==============
+  ================*/
+   .footer-distributed .footer-links {
+     color: #ffffff;
+     margin: 20px 0 12px;
+     padding: 0;
+   }
+
+   .footer-distributed .footer-links a {
+     display: inline-block;
+     line-height: 1.8;
+     text-decoration: none;
+     color: inherit;
+   }
+
+   /* 
+  ===============
+  ================
+  STYLE DU PETIT COPYRIGHT
+  ================
+  ================== */
+   .footer-distributed .footer-company-name {
+     color: #8f9296;
+     font-size: 14px;
+     font-weight: normal;
+     margin: 0;
+   }
+
+   /* 
+  ===============
+  =================
+  LARGEUR DE LA PARTIE CENTRAL DU FOOTER
+  =================
+  =================== */
+   .footer-distributed .footer-center {
+     width: 35%;
+   }
+
+   /*
+  =================
+  ==================
+  STYLE DES ICONES DE LA PARTIE CENTRAL DU FOOTER
+  ==================
+  =====================
+  */
+   .footer-distributed .footer-center img {
+     text-align: center;
+     line-height: 42px;
+     margin: 10px 15px;
+     vertical-align: middle;
+   }
+
+   /* 
+  ================
+  =================
+  STYLE DU TEXT DE LA PARTIE CENTRAL DU FOOTER
+  =================
+  ============== */
+   .footer-distributed .footer-center p {
+     display: inline-block;
+     color: #ffffff;
+     vertical-align: middle;
+     margin: 0;
+     font-family: "Montserrat", sans-serif;
+   }
+
+   /*=========
+  ==============
+  STYLE DU SPAN DE L ADRESSE
+  =============
+  ==============*/
+   .footer-distributed .footer-center p span {
+     display: block;
+     font-size: 14px;
+     line-height: 2;
+     font-family: "Montserrat", sans-serif;
+   }
+
+   /*================
+  ================
+  STYLE DU MAIL(LIEN)
+  =============
+  =================*/
+   .footer-distributed .footer-center p a {
+     color: #5383d3;
+     text-decoration: none;
+   }
+
+   /*===============
+  =================
+  LARGEUR DE LA PARTIE DROITE DU FOOTER
+  =================
+  ================*/
+   .footer-distributed .footer-right {
+     width: 20%;
+   }
+
+   /*==============
+  ===============
+  STYLE DE LA PARTIE ABOUT
+  ==============
+  ===============*/
+   .footer-distributed .footer-company-about {
+     line-height: 20px;
+     color: #a1acda;
+     font-size: 13px;
+     font-weight: normal;
+     margin: 0;
+   }
+
+   /*============
+  ================
+  STYLE DU "A PROPOS DE NOUS" DE ABOUT
+  ==============
+  ===============*/
+   .footer-distributed .footer-company-about span {
+     display: block;
+     color: #ffffff;
+     font-size: 14px;
+     font-weight: bold;
+     margin-bottom: 20px;
+   }
+
+   /*=============
+  ================
+  POSITION DES ICONES VIS A VIS DU "A PROPOS DE NOUS"
+  ===================
+  ==================*/
+   .footer-distributed .footer-icons {
+     margin-top: 25px;
+   }
+
+   /*===============
+  ================
+  STYLE DES ICONES DE RESAUX SOCIAUX
+  ================
+  ==============*/
+   .footer-distributed .footer-icons a {
+     display: inline-block;
+     cursor: pointer;
+     text-align: center;
+     line-height: 35px;
+     margin-right: 3px;
+     margin-bottom: 5px;
+   }
+
+   .topnav.scrolled {
+     background-color: rgb(141, 20, 20) !important;
+     transition: background-color 200ms linear;
+   }
+
+   /* 
+  ===============================================================================
+  ===============================================================================
+  RESPONSIVE
+  ===============================================================================
+  ===============================================================================
+  */
+
+   @media (max-width: 880px) {
+     .footer-distributed {
+       font: bold 14px sans-serif;
+     }
+
+     .footer-distributed .footer-left,
+     .footer-distributed .footer-center,
+     .footer-distributed .footer-right {
+       display: block;
+       width: 100%;
+       margin-bottom: 40px;
+       text-align: center;
+     }
+
+     .footer-distributed .footer-center i {
+       margin-left: 0;
+     }
+
+     .main {
+       line-height: normal;
+       font-size: auto;
+     }
+   }
+
+   /*                    responsive                      */
+ 
